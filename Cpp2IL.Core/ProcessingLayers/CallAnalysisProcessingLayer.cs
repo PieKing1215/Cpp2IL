@@ -20,7 +20,7 @@ public class CallAnalysisProcessingLayer : Cpp2IlProcessingLayer
     /// <summary>
     /// We don't want 1000 attributes on a single method
     /// </summary>
-    const int MaximumCalledByAttributes = 20;
+    const int MaximumCalledByAttributes = 250;
 
     public override void Process(ApplicationAnalysisContext appContext, Action<int, int>? progressCallback = null)
     {
